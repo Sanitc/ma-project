@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar
       app
-      color="primary"
+      color="brown"
       dark
     >
       <div class="d-flex align-center">
@@ -15,44 +15,61 @@
           width="40"
         />
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
       </div>
 
       <v-spacer></v-spacer>
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
+      <v-btn        
         text
       >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
+        <span class="mr-2">Accueil</span>
+      </v-btn>
+
+      <v-btn        
+        text
+      >
+        <span class="mr-2">Le Gîte</span>
+      </v-btn>
+
+      <v-btn        
+        text
+      >
+        <span class="mr-2">Prestations</span>
+      </v-btn>
+
+      <v-btn        
+        text
+      >
+        <span class="mr-2">Activités</span>
+      </v-btn>
+
+      <v-btn        
+        text
+      >
+        <span class="mr-2">Réservation</span>
       </v-btn>
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+      <Accueil/>
+      <Gite/>
+      <Prestations/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
-
+import Accueil from './pages/Accueil';
+import Gite from './pages/Gite.vue';
+import Prestations from './pages/Prestations.vue';
 export default {
   name: 'App',
-
   components: {
-    HelloWorld,
-  },
-
+    Accueil,
+    Gite,
+    Prestations,
+    
+},
   data: () => ({
     //
   }),
