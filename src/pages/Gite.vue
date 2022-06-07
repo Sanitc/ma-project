@@ -70,7 +70,7 @@
 
 <style scoped>
 .gite-section{
-  background-color: #eeeef8;
+
 }
 .img{
   border-radius: 15px;
