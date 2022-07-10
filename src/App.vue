@@ -1,60 +1,67 @@
 <template>
   <v-app>
+    
     <v-app-bar
       app
       color="brown"
       dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
 
-      </div>
+      
+    >
+     
 
       <v-spacer></v-spacer>
 
       <v-btn        
         text
+        href="#accueil"
+        @click="$vuetify.goTo('#accueil')"
       >
         <span class="mr-2">Accueil</span>
       </v-btn>
 
       <v-btn        
         text
+        href="#gite"
+       @click="$vuetify.goTo('#gite')"
       >
         <span class="mr-2">Le Gîte</span>
       </v-btn>
 
       <v-btn        
         text
+        href="#prestations"
+        @click="$vuetify.goTo('#prestations')"
+        
       >
         <span class="mr-2">Prestations</span>
       </v-btn>
 
       <v-btn        
         text
+        href="#activites"
+        @click="$vuetify.goTo('#activites')"
+        
       >
         <span class="mr-2">Activités</span>
       </v-btn>
 
       <v-btn        
         text
+        href="#reservation"
+        @click="$vuetify.goTo('#reservation')"
+        
       >
         <span class="mr-2">Réservation</span>
       </v-btn>
     </v-app-bar>
 
     <v-main>
-      <Accueil/>
-      <Gite/>
-      <Prestations/>
-      <Reservation/>
+      <Accueil id="accueil"/>
+      <Gite id="gite"/>
+      <Prestations id="prestations"/>
+      <Activites id="activites"/>      
+      <Reservation id="reservation"/>
     </v-main>
   </v-app>
 </template>
@@ -63,6 +70,7 @@
 import Accueil from './pages/Accueil';
 import Gite from './pages/Gite.vue';
 import Prestations from './pages/Prestations.vue';
+import Activites from './pages/Activites.vue';
 import Reservation from './pages/Reservation.vue';
 export default {
   name: 'App',
@@ -70,10 +78,15 @@ export default {
     Accueil,
     Gite,
     Prestations,
+    Activites,
     Reservation
+    
 },
   data: () => ({
     //
   }),
 };
+
+
+
 </script>
