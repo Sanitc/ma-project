@@ -1,60 +1,56 @@
 <template>
   <v-app>
+      <v-app-bar
+        app
+        color="brown"
+        dark        
+      >
+        <v-spacer></v-spacer>
+
+        <v-btn        
+          text
+          href="#accueil"
+          @click="$vuetify.goTo('#accueil')"
+        >
+          <span class="mr-2">Accueil</span>
+        </v-btn>
+
+        <v-btn        
+          text
+          href="#gite"
+        @click="$vuetify.goTo('#gite')"
+        >
+          <span class="mr-2">Le Gîte</span>
+        </v-btn>
+
+        <v-btn        
+          text
+          href="#prestations"
+          @click="$vuetify.goTo('#prestations')"
+          
+        >
+          <span class="mr-2">Prestations</span>
+        </v-btn>
+
+        <v-btn        
+          text
+          href="#activites"
+          @click="$vuetify.goTo('#activites')"
+          
+        >
+          <span class="mr-2">Activités</span>
+        </v-btn>
+
+        <v-btn        
+          text
+          href="#reservation"
+          @click="$vuetify.goTo('#reservation')"
+          
+        >
+          <span class="mr-2">Réservation</span>
+        </v-btn>
+      </v-app-bar>
     
-    <v-app-bar
-      app
-      color="brown"
-      dark
-
-      
-    >
-     
-
-      <v-spacer></v-spacer>
-
-      <v-btn        
-        text
-        href="#accueil"
-        @click="$vuetify.goTo('#accueil')"
-      >
-        <span class="mr-2">Accueil</span>
-      </v-btn>
-
-      <v-btn        
-        text
-        href="#gite"
-       @click="$vuetify.goTo('#gite')"
-      >
-        <span class="mr-2">Le Gîte</span>
-      </v-btn>
-
-      <v-btn        
-        text
-        href="#prestations"
-        @click="$vuetify.goTo('#prestations')"
-        
-      >
-        <span class="mr-2">Prestations</span>
-      </v-btn>
-
-      <v-btn        
-        text
-        href="#activites"
-        @click="$vuetify.goTo('#activites')"
-        
-      >
-        <span class="mr-2">Activités</span>
-      </v-btn>
-
-      <v-btn        
-        text
-        href="#reservation"
-        @click="$vuetify.goTo('#reservation')"
-        
-      >
-        <span class="mr-2">Réservation</span>
-      </v-btn>
-    </v-app-bar>
 
     <v-main>
       <Accueil id="accueil"/>
@@ -86,7 +82,4 @@ export default {
     //
   }),
 };
-
-
-
 </script>

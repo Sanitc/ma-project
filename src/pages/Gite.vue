@@ -103,7 +103,7 @@
   
   height: 284px;
   width: 400px;
-  cursor: pointer;
+  
 }
 
 .grid-section{

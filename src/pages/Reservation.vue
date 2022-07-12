@@ -7,6 +7,7 @@
                 ref="form"
                 v-model="valid"
                 lazy-validation
+                
                
             >
             <h1 class="form-title">Contacter-nous</h1>
@@ -37,6 +38,7 @@
                 color="success"
                 class="mr-4"
                 @click="validate"
+                @click.stop="dialog = true"
                 >
                 Envoyer
                 </v-btn>
@@ -49,7 +51,31 @@
                 Effacer
                 </v-btn>
             </v-form>        
-        
+        <v-dialog
+      v-model="dialog"
+      max-width="290"
+    >
+      <v-card>
+        <v-card-title class="text-h5">
+         Confirmation.
+        </v-card-title>
+
+          <v-card-text>
+          Votre mail a bien été envoyer.
+        </v-card-text>
+     
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn
+            color="red darken-1"
+            text
+            @click="dialog = false"
+          >
+            Retour
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
            
         </v-row>
       </div>      
@@ -68,7 +94,8 @@
 .contact-form{
     background-color: white;
     border-radius: 10px;
-    width: 25%;
+    height: 50%;
+    width: auto;
     padding-top: 2%;
     padding-bottom: 2%;
     padding-left: 2%;
@@ -89,6 +116,7 @@
 <script>
   export default {
     data: () => ({
+      dialog: false,
       valid: true,
       name: '',
       nameRules: [
@@ -109,11 +137,13 @@
 
     methods: {
       validate () {
-        this.$refs.form.validate()
+        this.$refs.form.validate();
+        this.$refs.form.reset();
+      }
       },
       reset () {
-        this.$refs.form.reset()
+        this.$refs.form.reset();
       }
-    },
+      
   }
 </script>
