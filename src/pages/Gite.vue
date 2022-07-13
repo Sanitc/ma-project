@@ -6,6 +6,7 @@
         <v-row>
           <v-col sm="6">
           <v-img
+          
             :src="require('../assets/img/gite/gite.png')"
             class="gite-img"
           />
@@ -45,17 +46,24 @@
               <div class="gite-grid">
                 <v-row>
                   <v-col v-for="item in items" :key="item.id" class="d-flex child-flex" cols="6" sm="4">
+                  
                     <v-card flat tile class="d-flex">
-                      <v-img contain :src="item.src" aspect-ratio="1" class="img-grid">
-                        <template v-slot:placeholder>
-                          <v-row class="fill-height ma-0" align="center" justify="center">
-                            <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-                          </v-row>
-                        </template>
+                      <v-img contain :src="item.src" aspect-ratio="1" class="img-grid" @click.stop="dialog = true">
                       </v-img>
                     </v-card>
+                    
                   </v-col>
                 </v-row>   
+                <v-dialog
+            v-model="dialog"
+            max-width="60%"
+          >
+            
+                  <v-img :src="require('../assets/img/gite/gite.png')"
+            class="gite-img">
+                      </v-img>
+            
+           </v-dialog>
               </div>      
             </div>   
           </v-col>
@@ -94,7 +102,8 @@
 }
 .gite-img{
   height: 100;
-  width: 100;
+  
+  
 }
 .reserve-btn{
   color:white;
@@ -103,7 +112,12 @@
   
   height: 284px;
   width: 400px;
-  
+  cursor:pointer;
+}
+
+.test{
+  max-height: 100;
+  width: 100;
 }
 
 .grid-section{
@@ -159,8 +173,11 @@ export default {
           id: 9,
           src: require("../assets/img/galerie/galerie9.png")
         }
-      ]
+      ],
+      dialog: false,
+      
     };
-  }
+    
+  },
 };
 </script>
