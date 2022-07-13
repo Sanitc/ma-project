@@ -34,15 +34,6 @@
 
         <v-btn        
           text
-          href="#activites"
-          @click="$vuetify.goTo('#activites')"
-          
-        >
-          <span class="mr-2">Activités</span>
-        </v-btn>
-
-        <v-btn        
-          text
           href="#reservation"
           @click="$vuetify.goTo('#reservation')"
           
@@ -66,7 +57,6 @@
 import Accueil from './pages/Accueil';
 import Gite from './pages/Gite.vue';
 import Prestations from './pages/Prestations.vue';
-import Activites from './pages/Activites.vue';
 import Reservation from './pages/Reservation.vue';
 export default {
   name: 'App',
@@ -74,7 +64,6 @@ export default {
     Accueil,
     Gite,
     Prestations,
-    Activites,
     Reservation
     
 },
