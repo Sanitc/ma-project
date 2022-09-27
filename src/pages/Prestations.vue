@@ -50,9 +50,7 @@
     margin-left: auto;
     margin-right: auto ;
 }
-.prestation-section{
-  margin-bottom: 2%;
-}
+
 
 .card{
   display: block;
