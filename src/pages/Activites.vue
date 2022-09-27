@@ -82,64 +82,64 @@ export default {
     return {
       projects: [
         {
-          name: 'act1',
+          name: 'Chateau de Fougères',
           description: "Cette application permettra de retrouver des magasins éco-responsable dans Rennes, et donnera des conseils afin de reduire son impact écologique.",
-          image: 'https://raw.githubusercontent.com/Sanitc/phoikos/master/assets/images/logo/%C3%A9t%C3%A9.png'
+          image: 'https://raw.githubusercontent.com/Sanitc/ma-project/master/src/assets/img/act/act1.png'
         },
         {
-          name: 'act2',
+          name: 'Vieux Rennes',
           description: "cette app...",
-          image: 'https://raw.githubusercontent.com/Sanitc/website/main/src/assets/img/projet/portefolio-projet.png'
+          image: 'https://raw.githubusercontent.com/Sanitc/ma-project/master/src/assets/img/act/act2.png'
         },
         {
-          name: 'act3',
+          name: 'Rennes',
           description: "cette app...",
-          image: 'https://raw.githubusercontent.com/Sanitc/website/main/src/assets/img/projet/portefolio-projet.png'
+          image: 'https://raw.githubusercontent.com/Sanitc/ma-project/master/src/assets/img/act/act3.png'
         },
         {
-          name: 'act4',
+          name: 'Gr34',
           description: "cette app...",
-          image: 'https://raw.githubusercontent.com/Sanitc/website/main/src/assets/img/projet/portefolio-projet.png'
+          image: 'https://raw.githubusercontent.com/Sanitc/ma-project/master/src/assets/img/act/act4.png'
         },
         {
-          name: 'act5',
+          name: 'La vallée du couesnon',
           description: "cette app...",
-          image: 'https://raw.githubusercontent.com/Sanitc/website/main/src/assets/img/projet/portefolio-projet.png'
+          image: 'https://raw.githubusercontent.com/Sanitc/ma-project/master/src/assets/img/act/act5.png'
         },
         {
-          name: 'act6',
+          name: "base d'activité de la méziere",
           description: "cette app...",
-          image: 'https://raw.githubusercontent.com/Sanitc/website/main/src/assets/img/projet/portefolio-projet.png'
+          image: 'https://raw.githubusercontent.com/Sanitc/ma-project/master/src/assets/img/act/act6.png'
         },
         {
-          name: 'act7',
+          name: 'canöe kayak',
           description: "cette app...",
-          image: 'https://raw.githubusercontent.com/Sanitc/website/main/src/assets/img/projet/portefolio-projet.png'
+          image: 'https://raw.githubusercontent.com/Sanitc/ma-project/master/src/assets/img/act/act7.png'
         },
         {
-          name: 'act8',
+          name: 'escalade',
           description: "cette app...",
-          image: 'https://raw.githubusercontent.com/Sanitc/website/main/src/assets/img/projet/portefolio-projet.png'
+          image: 'https://raw.githubusercontent.com/Sanitc/ma-project/master/src/assets/img/act/act8.png'
         },
         {
-          name: 'act9',
+          name: 'accrobranche',
           description: "cette app...",
-          image: 'https://raw.githubusercontent.com/Sanitc/website/main/src/assets/img/projet/portefolio-projet.png'
+          image: 'https://raw.githubusercontent.com/Sanitc/ma-project/master/src/assets/img/act/act12.png'
         },
         {
-          name: 'act10',
+          name: 'mont Saint Michel',
           description: "cette app...",
-          image: 'https://raw.githubusercontent.com/Sanitc/website/main/src/assets/img/projet/portefolio-projet.png'
+          image: 'https://raw.githubusercontent.com/Sanitc/ma-project/master/src/assets/img/act/act10.png'
         },
         {
-          name: 'act11',
+          name: 'Saint Malo',
           description: "cette app...",
-          image: 'https://raw.githubusercontent.com/Sanitc/website/main/src/assets/img/projet/portefolio-projet.png'
+          image: 'https://raw.githubusercontent.com/Sanitc/ma-project/master/src/assets/img/act/act11.png'
         },
         {
-          name: 'act12',
+          name: 'Cancal',
           description: "cette app...",
-          image: 'https://raw.githubusercontent.com/Sanitc/website/main/src/assets/img/projet/portefolio-projet.png'
+          image: 'https://raw.githubusercontent.com/Sanitc/ma-project/master/src/assets/img/act/act9.png'
         }     
      ]
     }
