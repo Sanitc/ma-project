@@ -19,7 +19,7 @@
    background: url('../assets/img/accueil/accueil-background.jpg')
     no-repeat center center fixed;
   background-size: cover;
-  height: 20%;
+  height: 10%;
 }
 
 .center-about{

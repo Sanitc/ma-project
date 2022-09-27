@@ -1,7 +1,22 @@
 <template>
   <section id="reservation" class="reservation-section">
-   <v-container>
-      <div>
+    
+    <v-container>
+      <div class="center-gite">
+        <v-row>
+          <v-col sm="6">
+            <div>
+              <h1 class="contact-title">Contactez-nous</h1>
+              <p></p><p></p>
+              <div class="contact-text">                 
+                  <p><span><v-icon color="white">mdi-email</v-icon>  contact@gitedelabergere.fr</span></p>
+                  <p><span><v-icon color="white">mdi-phone</v-icon>  00 11 22 33 44</span></p>
+                  <p><span><v-icon color="white">mdi-map-marker</v-icon>  La bergère, 35140 Mézières-sur-Couesnon</span></p>                    
+              </div>                
+            </div> 
+          </v-col>
+          <v-col sm="6" class="d-flex flex-column justify-center ">
+            <div>
         <v-row>  
           <v-form class="contact-form"
                 ref="form"
@@ -78,17 +93,45 @@
     </v-dialog>
            
         </v-row>
-      </div>      
-    </v-container> 
+      </div> 
+          </v-col>
+        </v-row>
+      </div>
+
+      
+    </v-container>
   </section>
 </template>
 
 <style scoped>
 .reservation-section{
+  background: #795548;
+}
+
+/*
+.reservation-section{
    background: url('../assets/img/accueil/accueil-background.jpg')
     no-repeat center center fixed;
   background-size: cover;
   height: 20%;
+}
+*/
+.center-gite{
+  padding-top: 5%;
+  padding-left: 10%;
+  margin-bottom: 2%;
+}
+
+.contact-title{
+ font-weight: 300;
+ font-size: 4rem;
+ color: white;
+}
+
+.contact-text{
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: white;
 }
 
 .contact-form{
@@ -110,8 +153,8 @@
     color: saddlebrown;
 }
 
-
 </style>
+
 
 <script>
   export default {

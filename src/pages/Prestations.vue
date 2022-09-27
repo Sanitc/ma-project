@@ -50,8 +50,6 @@
     margin-left: auto;
     margin-right: auto ;
 }
-
-
 .card{
   display: block;
     margin-left: auto;

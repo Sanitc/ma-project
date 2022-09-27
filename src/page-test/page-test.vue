@@ -1,126 +1,149 @@
 <template>
-  <div id="app">
-    <v-app>
-        <nav>
-            <v-toolbar id="toolbar" color="brown">
-                <v-spacer></v-spacer>                
-                    <v-icon class="hidden-md-and-up" @click="toggleMenu = !toggleMenu" color="white" >mdi-menu</v-icon>                
-                <v-menu
-                v-model="showMenu"
-                :absolute="toggleMenu"
-                :content-class="'px-2 elevation-0'"    
-                min-width="100%">
-                    <div class="d-flex flex-md-row justify-end" v-if="!toggleMenu" >
-                        <v-btn       
-                          text
-                          color="white"
-                          @click="$vuetify.goTo('#accueil')"
-                        >
-                          <span class="mr-2">Accueil</span>
-                        </v-btn>
+  <section id="reservation" class="reservation-section">
+   <v-container>
+      <div>
+        <v-row>  
+          <v-form class="contact-form"
+                ref="form"
+                v-model="valid"
+                lazy-validation
+                
+               
+            >
+            <h1 class="form-title">Contacter-nous</h1>
+                <v-text-field
+                v-model="name"
+                :counter="30"
+                :rules="nameRules"
+                label="Nom Prénom"
+                required
+                ></v-text-field>
 
-                        <v-btn        
-                          text
-                          color="white"
-                          href="#gite"
-                        @click="$vuetify.goTo('#gite')"
-                        >
-                          <span class="mr-2">Le Gîte</span>
-                        </v-btn>
+                <v-text-field
+                v-model="email"
+                :rules="emailRules"
+                label="E-mail"
+                required
+                ></v-text-field>
 
-                        <v-btn        
-                          text
-                          color="white"
-                          @click="$vuetify.goTo('#prestations')"
-                          
-                        >
-                          <span class="mr-2">Prestations</span>
-                        </v-btn>
+                <v-textarea
+                v-model="message"
+                :rules="messageRules"
+                label="Message"
+                required
+                ></v-textarea>
 
-                        <v-btn        
-                          text
-                          color="white"
-                          @click="$vuetify.goTo('#reservation')"
-                          
-                        >
-                          <span class="mr-2">Réservation</span>
-                        </v-btn>
-                    </div>
-                    <div class="" v-else >
-                              <v-btn       
-                          text
-                          color="white"
-                          @click="$vuetify.goTo('#accueil')"
-                        >
-                          <v-icon>mdi-home-outline</v-icon>  
-                        </v-btn>
+                <v-btn
+                :disabled="!valid"
+                color="success"
+                class="mr-4"
+                @click="validate"
+                @click.stop="dialog = true"
+                >
+                Envoyer
+                </v-btn>
 
-                        <v-btn        
-                          text
-                          color="white"
-                          href="#gite"
-                        @click="$vuetify.goTo('#gite')"
-                        >
-                          <v-icon>mdi-image</v-icon>  
-                        </v-btn>
+                <v-btn
+                color="error"
+                class="mr-4"
+                @click="reset"
+                >
+                Effacer
+                </v-btn>
+            </v-form>        
+        <v-dialog
+      v-model="dialog"
+      max-width="290"
+    >
+      <v-card>
+        <v-card-title class="text-h5">
+         Confirmation.
+        </v-card-title>
 
-                        <v-btn        
-                          text
-                          color="white"
-                          @click="$vuetify.goTo('#prestations')"
-                          
-                        >
-                          <v-icon>mdi-pool</v-icon>  
-                        </v-btn>
-
-                        <v-btn        
-                          text
-                          color="white"
-                          @click="$vuetify.goTo('#reservation')"
-                          
-                        >
-                          <v-icon>mdi-ticket</v-icon>  
-                        </v-btn>
-
-                    </div>
-                </v-menu>
-            </v-toolbar>
-        </nav>
-        <v-main>
-          <Accueil id="accueil"/>
-          <Gite id="gite"/>
-          <Prestations id="prestations"/>
-          <Activites id="activites"/>      
-          <Reservation id="reservation"/>
-        </v-main>
-    </v-app>
-</div>
+          <v-card-text>
+          Votre mail a bien été envoyer.
+        </v-card-text>
+     
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn
+            color="red darken-1"
+            text
+            @click="dialog = false"
+          >
+            Retour
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+           
+        </v-row>
+      </div>      
+    </v-container> 
+  </section>
 </template>
 
-<script>
-import Accueil from './pages/Accueil';
-import Gite from './pages/Gite.vue';
-import Prestations from './pages/Prestations.vue';
-import Reservation from './pages/Reservation.vue';
-export default {
-  name: 'App',
-  components: {
-    Accueil,
-    Gite,
-    Prestations,
-    Reservation
-    
-},
-  data() {
-        return {
-            toggleMenu: false,
-        }
-    },
-    computed: {
-        showMenu() {
-            return this.toggleMenu || this.$vuetify.breakpoint.mdAndUp
-        }
-    }
-};
-</script>
+<style scoped>
+.reservation-section{
+   background: url('../assets/img/accueil/accueil-background.jpg')
+    no-repeat center center fixed;
+  background-size: cover;
+  height: 20%;
+}
 
+.contact-form{
+    background-color: white;
+    border-radius: 10px;
+    height: 50%;
+    width: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto ;
+}
+
+.form-title{
+    color: saddlebrown;
+}
+
+
+</style>
+
+<script>
+  export default {
+    data: () => ({
+      dialog: false,
+      valid: true,
+      name: '',
+      nameRules: [
+        v => !!v || 'un nom est requis',
+        v => (v && v.length <= 30) || 'Merci de mettre maximum 30 caratères',
+      ],
+      email: '',
+      emailRules: [
+        v => !!v || 'une adresse mail est requise',
+        v => /.+@.+\..+/.test(v) || "L'e-mail n'est pas valide",
+      ],
+      message: '',
+      messageRules: [
+        v => !!v || 'un message est requis',
+        v => (v && v.length >= 10) || 'Veuillez saisir un message de minimum 10 caractères',
+      ],  
+    }),
+
+    methods: {
+      validate () {
+        this.$refs.form.validate();
+        this.$refs.form.reset();
+      }
+      },
+      reset () {
+        this.$refs.form.reset();
+      }
+      
+  }
+</script>
