@@ -15,17 +15,14 @@
             <div>
               <h2 class="gite-title">Gite de la bergère</h2>
               <div class="gite-text">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                  when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                <p>Pour un week-end ou une semaine, profitez d’un gîte d’exception clé en main pouvant accueillir jusqu’à 9 personnes au sein d'un petit village.</p>
 
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                  when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                <p>Situé au bord de la vallée du Couesnon et de son domaine départemental, cette longère a été rénovée en gite tout confort, 
+                  plein de charme. Un accès direct au Gr39 vous permettra de profiter pleinement de nombreuse activitées nature sur un terrain valonné.
+                Au terme de vos journées sportive, détendez-vous au calme en profitant du jacuzzi installé en plein air ou en passant d'agréable moment avec tout ce qui est mis à votre disposition.</p>
 
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                  when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                <p>Durant les périodes de vacances scolaires,
+                  les séjours sont toujours du samedi au samedi suivant, les week ends sont du vendredi au dimanche.</p>
 
                   <v-btn color="brown"             
                    href="#reservation"

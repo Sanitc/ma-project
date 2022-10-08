@@ -80,33 +80,23 @@
       projects: [
         {
           name: 'Chateau de Fougères',
-          description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+          description: "Découvrer la plus grande cité médiéval d'Europe, à 25 minutes du gite.",
           image: 'https://raw.githubusercontent.com/Sanitc/ma-project/master/src/assets/img/act/act1.png'
         },
         {
-          name: 'Vieux Rennes',
-          description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+          name: 'Rennes',
+          description: "La capital bretonne, vous ouvre ses portes, à une demi heure (Musée de Bretagne, Parcs, Gastronomie, architecture, vieux Rennes...).",
           image: 'https://raw.githubusercontent.com/Sanitc/ma-project/master/src/assets/img/act/act2.png'
         },
         {
-          name: 'Rennes',
-          description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-          image: 'https://raw.githubusercontent.com/Sanitc/ma-project/master/src/assets/img/act/act3.png'
-        },
-        {
-          name: 'Gr34',
-          description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+          name: 'Gr39',
+          description: "Randonnée sur le GR39 à travers la Manche, l'Ille et Vilaine et la Loire-Atlantique du Mont St Michel à Hoscas.",
           image: 'https://raw.githubusercontent.com/Sanitc/ma-project/master/src/assets/img/act/act4.png'
         },
         {
           name: 'La vallée du Couesnon',
           description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
           image: 'https://raw.githubusercontent.com/Sanitc/ma-project/master/src/assets/img/act/act5.png'
-        },
-        {
-          name: "Base d'activité de la Méziere",
-          description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-          image: 'https://raw.githubusercontent.com/Sanitc/ma-project/master/src/assets/img/act/act6.png'
         },
         {
           name: 'Canöe Kayak',
@@ -125,17 +115,17 @@
         },
         {
           name: 'Mont Saint Michel',
-          description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+          description: "Profiter de votre séjour en bretagne pour faire votre traversée de la baie et visiter l'une des 7 merveilles du monde.",
           image: 'https://raw.githubusercontent.com/Sanitc/ma-project/master/src/assets/img/act/act9.png'
         },
         {
           name: 'Saint Malo',
-          description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+          description: "La cité corsaire vous acceuil avec ses grandes plages de sables fin, ses restaurants étoilés. Intra-muros vous fera perdre la notion du temps.",
           image: 'https://raw.githubusercontent.com/Sanitc/ma-project/master/src/assets/img/act/act10.png'
         },
         {
-          name: 'Cancal',
-          description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+          name: 'Cancale',
+          description: "Que diriez-vous d'un magnifique plateau de fruits de mer ? Vous êtes à la bonne adresse.",
           image: 'https://raw.githubusercontent.com/Sanitc/ma-project/master/src/assets/img/act/act11.png'
         }     
      ]

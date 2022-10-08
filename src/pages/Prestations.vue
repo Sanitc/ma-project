@@ -71,40 +71,40 @@ export default {
  data() {
     return {
       prestations: [
+      {
+          titre: ' Aménagement dans le gite',
+          github: 'https://github.com/Sanitc/phoikos',
+          description: "Wifi et Réseau 4G. Parking pour 3 voitures, jardin cloturé de 700m2 avec jacuzzi. Préau  avec salon de jardin et possibilité chauffage l'hiver, terrasse avec table extérieure, plancha et barbecue. Mise à disposition de 4 vélos toute taille",
+          icon: 'mdi-home-variant-outline'
+        },
         {
           titre: ' Chambres',
           github: 'https://github.com/Sanitc/phoikos',
-          description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
+          description: "3 chambres doubles et un dortoir de 3 lits simples, 2 salles de bains dont une avec facilitation mobilité réduite, 1 drap de bain et une serviette de bain fournit par personnes, Linge de lit fourni",
           icon: 'mdi-bed-king-outline'
-        },
-        {
-          titre: ' Aménagement dans le gite',
-          github: 'https://github.com/Sanitc/phoikos',
-          description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-          icon: 'mdi-home-variant-outline'
         },
         {
           titre: ' Pièce commune',
           github: 'https://github.com/Sanitc/phoikos',
-          description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
+          description: "Grande table, Table de jeux,  Canapé d'angle avec TV, Mézzanine espace de lecture",
           icon: 'mdi-sofa-outline'
         },
         {
           titre: ' Cuisine',
           github: 'https://github.com/Sanitc/phoikos',
-          description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
+          description: "Cuisine toute équipé avec Micro-onde, Four, Plaques induction, Lave vaisselle, Réfrigérateur, Arrière cuisine avec lave linge et sèche linge",
           icon: 'mdi-silverware-fork-knife'
         },
         {
           titre: ' Espace Spa',
           github: 'https://github.com/Sanitc/phoikos',
-          description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
+          description: "Jacuzzi 5 places dont 1 allongée, douche extérieure",
           icon: 'mdi-hot-tub'
         },
         {
           titre: ' Autour du gîte',
           github: 'https://github.com/Sanitc/phoikos',
-          description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
+          description: "Randonnée, marche nordique, Course a pied, VTT, Base de loisir avec canöe-kayak, paddle, escalade, tir a l'arc. Au pied de la rivière 'Le Couesnon', pêche, à 30 minutes de la mer (St Malo, Cancale, Mt St Michel)",
           icon: 'mdi-compass-outline'
         }           
       ]
