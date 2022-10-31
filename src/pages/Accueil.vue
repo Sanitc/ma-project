@@ -4,11 +4,13 @@
     <v-container>
       
       <div class="center">        
-          <h1>Gîte de la Bergère</h1>
+          <h1 class="acceuil-title">Gîte de la Bergère</h1>
           <p></p>
-          <p>MEUBLÉ DE TOURISME X ÉTOILES</p>
-          <p>LABELLISATION GITE DE FRANCE X ÉPIS</p>
-          <p>PAIEMENT ACCEPTÉ : ANCV CHÈQUES VACANCES </p>
+          <div class="acceuil-text">
+            <p>Meublé de tourisme X étoiles</p>
+            <p>Labelisation gîte de France X épis</p>
+            <p>Paiement accepté : ANCV Chèques vacances </p>
+          </div>  
       </div>
       
     </v-container>
@@ -38,5 +40,16 @@
   font-size: 150%;
   color: white;
 }
+.acceuil-title{
+ font-weight: 350;
+ font-size: 4rem;
+ color: white;
+}
+.acceuil-text{
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: white;
+}
+
 
 </style>

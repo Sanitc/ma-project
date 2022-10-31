@@ -99,20 +99,11 @@
           image: 'https://raw.githubusercontent.com/Sanitc/ma-project/master/src/assets/img/act/act5.png'
         },
         {
-          name: 'Canöe Kayak',
+          name: 'Activité sportive',
           description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-          image: 'https://raw.githubusercontent.com/Sanitc/ma-project/master/src/assets/img/act/act7.png'
+          image: 'https://raw.githubusercontent.com/Sanitc/ma-project/master/src/assets/img/act/act15.png'
         },
-        {
-          name: 'Escalade',
-          description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-          image: 'https://raw.githubusercontent.com/Sanitc/ma-project/master/src/assets/img/act/act8.png'
-        },
-        {
-          name: 'Accrobranche',
-          description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-          image: 'https://raw.githubusercontent.com/Sanitc/ma-project/master/src/assets/img/act/act12.png'
-        },
+       
         {
           name: 'Mont Saint Michel',
           description: "Profiter de votre séjour en bretagne pour faire votre traversée de la baie et visiter l'une des 7 merveilles du monde.",

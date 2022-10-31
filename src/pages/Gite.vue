@@ -98,7 +98,9 @@
   
 }
 .gite-img{
+  margin-top: 15%;
   height: 100;
+  width: auto;
   
   
 }
