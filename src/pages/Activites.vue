@@ -95,12 +95,12 @@
         },
         {
           name: 'La vallée du Couesnon',
-          description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+          description: "Vener vous promener dans la vallée du couesnon",
           image: 'https://raw.githubusercontent.com/Sanitc/ma-project/master/src/assets/img/act/act5.png'
         },
         {
-          name: 'Activité sportive',
-          description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+          name: 'Activités sportives',
+          description: "randonnée, VTT, escalade, canöe-kayak, accrobranche",
           image: 'https://raw.githubusercontent.com/Sanitc/ma-project/master/src/assets/img/act/act15.png'
         },
        
