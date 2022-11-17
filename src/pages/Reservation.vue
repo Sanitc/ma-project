@@ -17,109 +17,44 @@
           </v-col>
           <v-col sm="6" class="d-flex flex-column justify-center ">
             <div>
-        <v-row>  
-          <v-form class="contact-form"
-                ref="form"
-                v-model="valid"
-                lazy-validation
-                
-               
-            >
-            <h1 class="form-title">Contacter-nous</h1>
-                <v-text-field
-                v-model="name"
-                :counter="30"
-                :rules="nameRules"
-                label="Nom Prénom"
-                required
-                ></v-text-field>
-
-                <v-text-field
-                v-model="email"
-                :rules="emailRules"
-                label="E-mail"
-                required
-                ></v-text-field>
-
-                <v-textarea
-                v-model="message"
-                :rules="messageRules"
-                label="Message"
-                required
-                ></v-textarea>
-
-                <v-btn
-                :disabled="!valid"
-                color="success"
-                class="mr-4"
-                @click="validate"
-                @click.stop="dialog = true"
-                >
-                Envoyer
-                </v-btn>
-
-                <v-btn
-                color="error"
-                class="mr-4"
-                @click="reset"
-                >
-                Effacer
-                </v-btn>
-            </v-form>        
-        <v-dialog
-      v-model="dialog"
-      max-width="290"
-    >
-      <v-card>
-        <v-card-title class="text-h5">
-         Confirmation.
-        </v-card-title>
-
-          <v-card-text>
-          Votre mail a bien été envoyer.
-        </v-card-text>
-     
-        <v-card-actions>
-          <v-spacer></v-spacer>
-          <v-btn
-            color="red darken-1"
-            text
-            @click="dialog = false"
-          >
-            Retour
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-dialog>
-           
-        </v-row>
-      </div> 
+              <v-row>  
+                <div class="container">
+                  <form id="form" class="contact-form" ref="form" @submit.prevent="sendEmail">
+                    <h1 class="form-title">Formulaire de contact</h1>
+                    <input type="text" name="name" placeholder="Nom Prénom" required>
+                    <p></p>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <p></p>
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <p></p>
+                    <button type="submit" value="Submit">ENVOYER</button>
+                  </form>
+                </div>               
+              </v-row>
+             </div> 
           </v-col>
         </v-row>
       </div>
-
-      
     </v-container>
   </section>
 </template>
 
 <style scoped>
-.reservation-section{
+/*.reservation-section{
   background: #795548;
-}
+}*/
 
-/*
+
 .reservation-section{
    background: url('../assets/img/accueil/accueil-background.jpg')
     no-repeat center center fixed;
   background-size: cover;
-  height: 20%;
+  height: 12%;
 }
-*/
+
 .center-gite{
   padding-top: 5%;
   padding-left: 10%;
-  margin-bottom: 2%;
 }
 
 .contact-title{
@@ -135,10 +70,9 @@
 }
 
 .contact-form{
-    background-color: white;
-    border-radius: 10px;
-    height: 50%;
-    width: auto;
+  background-color: white;
+  border-radius: 10px;
+  
     padding-top: 2%;
     padding-bottom: 2%;
     padding-left: 2%;
@@ -149,44 +83,62 @@
     margin-right: auto ;
 }
 
-.form-title{
-    color: saddlebrown;
+* {box-sizing: border-box;}
+
+
+label {
+  float: left;
+}
+
+input[type=text], [type=email], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+button[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
 }
 
 </style>
-
-
 <script>
-  export default {
-    data: () => ({
-      dialog: false,
-      valid: true,
-      name: '',
-      nameRules: [
-        v => !!v || 'un nom est requis',
-        v => (v && v.length <= 30) || 'Merci de mettre maximum 30 caratères',
-      ],
-      email: '',
-      emailRules: [
-        v => !!v || 'une adresse mail est requise',
-        v => /.+@.+\..+/.test(v) || "L'e-mail n'est pas valide",
-      ],
-      message: '',
-      messageRules: [
-        v => !!v || 'un message est requis',
-        v => (v && v.length >= 10) || 'Veuillez saisir un message de minimum 10 caractères',
-      ],  
-    }),
+ import emailjs from 'emailjs-com';
+    //Send mail
+    export default {
+            methods: {
+        sendEmail() {
+          emailjs.sendForm('service_voh8gcf', 'template_ttsxwhn', this.$refs.form, 'd-Qv09SkEavmBppQp')
+            .then((result) => {
+                console.log('SUCCESS!', result.text);
+                
+                
+            }, (error) => {
+                console.log('FAILED...', error.text);
+            });
+        }
+      }
+    }
 
-    methods: {
-      validate () {
-        this.$refs.form.validate();
-        this.$refs.form.reset();
-      }
-      },
-      reset () {
-        this.$refs.form.reset();
-      }
-      
-  }
+//Clear form
+document.addEventListener("submit", function(event) {
+event.preventDefault() 
+event.target.reset()
+window.alert(" Votre mail a bien été envoyer!")
+})
+
+
 </script>

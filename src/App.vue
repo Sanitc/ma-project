@@ -58,6 +58,7 @@
       <Prestations id="prestations"/>
       <Activites id="activites"/>      
       <Reservation id="reservation"/>
+     
     </v-main>
   </v-app>
 </template>
@@ -68,6 +69,7 @@ import Gite from './pages/Gite.vue';
 import Prestations from './pages/Prestations.vue';
 import Activites from './pages/Activites.vue';
 import Reservation from './pages/Reservation.vue';
+
 export default {
   name: 'App',
   components: {
@@ -75,8 +77,8 @@ export default {
     Gite,
     Prestations,
     Activites,
-    Reservation
-    
+    Reservation,
+  
 },
   data: () => ({
     //

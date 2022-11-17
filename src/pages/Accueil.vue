@@ -18,16 +18,16 @@
 </template>
 
 <style scoped>
-/*.accueil-section{
+.accueil-section{
    background: url('../assets/img/accueil/accueil-background.jpg')
     no-repeat center center fixed;
   background-size: cover;
   height: 10%;
-}*/
-.accueil-section{
+}
+/*.accueil-section{
   background: #795548;
   
-}
+}*/
 .center-about{
   padding-top: 5%;
   padding-left: 10%

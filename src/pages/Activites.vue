@@ -95,7 +95,7 @@
         },
         {
           name: 'La vallée du Couesnon',
-          description: "Vener vous promener dans la vallée du couesnon",
+          description: "Vener vous promenez dans la vallée du couesnon",
           image: 'https://raw.githubusercontent.com/Sanitc/ma-project/master/src/assets/img/act/act5.png'
         },
         {
