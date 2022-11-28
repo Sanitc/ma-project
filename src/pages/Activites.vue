@@ -5,7 +5,7 @@
         <h2 class="activite-title">Activités autour du gîte</h2>
         <div>
           <v-row>
-            <v-col sm="9" class=" card">
+            <v-col sm="12" class=" card">
               <v-row class="justify-space-around mb-8 mt-4">
                 <v-card
                  v-for="project in projects"
@@ -21,7 +21,7 @@
                     :src="project.image"
                     />
                     <v-card-title>{{ project.name }}</v-card-title>
-                    <v-card-text>
+                    <v-card-text class="cards-txt">
                     {{ truncate(project.description) }}
                     </v-card-text>
                 </v-card>
@@ -64,6 +64,10 @@
       
   }
   
+  .cards-txt{
+    text-align: left;
+  }
+
   .cards{
     border-radius: 15px;
     box-shadow: 10px 5px 5px #ADAFBC;

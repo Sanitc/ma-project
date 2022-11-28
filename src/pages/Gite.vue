@@ -15,22 +15,25 @@
             <div>
               <h2 class="gite-title">Gite de la bergère</h2>
               <div class="gite-text">
-                <p>Pour un week-end ou une semaine, profitez d’un gîte d’exception clé en main pouvant accueillir jusqu’à 9 personnes au sein d'un petit village.</p>
+                <div>
+                  <p>Pour un week-end ou une semaine, profitez d’un gîte d’exception clé en main pouvant accueillir jusqu’à 9 personnes au sein d'un petit village.</p>
 
-                <p>Situé au bord de la vallée du Couesnon et de son domaine départemental, cette longère a été rénovée en gite tout confort, 
-                  plein de charme. Un accès direct au Gr39 vous permettra de profiter pleinement de nombreuse activitées nature sur un terrain valonné.
-                Au terme de vos journées sportive, détendez-vous au calme en profitant du jacuzzi installé en plein air ou en passant d'agréable moment avec tout ce qui est mis à votre disposition.</p>
+                  <p>Situé au bord de la vallée du Couesnon et de son domaine départemental, cette longère a été rénovée en gite tout confort, 
+                    plein de charme. Un accès direct au Gr39 vous permettra de profiter pleinement de nombreuse activitées nature sur un terrain valonné.
+                  Au terme de vos journées sportive, détendez-vous au calme en profitant du jacuzzi installé en plein air ou en passant d'agréable moment avec tout ce qui est mis à votre disposition.</p>
 
-                <p>Durant les périodes de vacances scolaires,
-                  les séjours sont toujours du samedi au samedi suivant, les week ends sont du vendredi au dimanche.</p>
-
-                  <v-btn color="brown"             
-                   href="#reservation"
+                  <p>Durant les périodes de vacances scolaires,
+                    les séjours sont toujours du samedi au samedi suivant, les week ends sont du vendredi au dimanche.</p>
+                </div>
+                <div class="btn-reservation">
+                    <v-btn color="brown"          
+                    href="#reservation"
                   @click="$vuetify.goTo('#reservation')"          
                   >
                   <span class="reserve-btn">Réserver</span>
-                  </v-btn>           
-            </div>                
+                  </v-btn> 
+                </div>                          
+              </div>              
             </div>   
           </v-col>
         </v-row>
@@ -48,19 +51,8 @@
                       <v-img contain :src="item.src" aspect-ratio="1" class="img-grid" @click.stop="dialog = true">
                       </v-img>
                     </v-card>
-                    
                   </v-col>
                 </v-row>   
-                <v-dialog
-            v-model="dialog"
-            max-width="60%"
-          >
-            
-                  <v-img :src="require('../assets/img/gite/gite.png')"
-            class="gite-img">
-                      </v-img>
-            
-           </v-dialog>
               </div>      
             </div>   
           </v-col>
@@ -91,11 +83,14 @@
   text-align: center;
 }
 .gite-text{
-  text-align: center;
+  text-align: left;
   margin-top: 2%;
   margin-right:10% ;
   margin-left:10% ;
   
+}
+.btn-reservation{
+  text-align: center;
 }
 .gite-img{
   margin-top: 15%;
@@ -111,7 +106,6 @@
   
   height: 284px;
   width: 400px;
-  cursor:pointer;
 }
 
 .test{

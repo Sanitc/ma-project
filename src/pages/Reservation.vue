@@ -9,7 +9,7 @@
               <h1 class="contact-title">Contactez-nous</h1>
               <p></p><p></p>
               <div class="contact-text">                 
-                  <p><span><v-icon color="white">mdi-email</v-icon>  contact@gitedelabergere.fr</span></p>
+                  <p><span><v-icon color="white">mdi-email</v-icon>  gitedelabergere@gmail.com</span></p>
                   <p><span><v-icon color="white">mdi-phone</v-icon>  00 11 22 33 44</span></p>
                   <p><span><v-icon color="white">mdi-map-marker</v-icon>  La bergère, 35140 Mézières-sur-Couesnon</span></p>                    
               </div>                
@@ -49,7 +49,7 @@
    background: url('../assets/img/accueil/accueil-background.jpg')
     no-repeat center center fixed;
   background-size: cover;
-  height: 12%;
+  height: 13%;
 }
 
 .center-gite{

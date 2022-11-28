@@ -1,9 +1,78 @@
 <template>
-  <v-app>
+  <v-app v-if="isMobile">
+    <v-app-bar
+        app
+        color="brown"
+        dark        
+        
+      >
+        <v-spacer></v-spacer>
+
+        <v-btn    
+          x-small    
+          text
+          href="#accueil"
+          @click="$vuetify.goTo('#accueil')"
+        >
+          <span >Accueil</span>
+        </v-btn>
+
+        <v-btn
+          x-small        
+          text
+          href="#gite"
+        @click="$vuetify.goTo('#gite')"
+        >
+          <span >Le Gîte</span>
+        </v-btn>
+
+        <v-btn    
+          x-small  
+          text
+          href="#prestations"
+          @click="$vuetify.goTo('#prestations')"
+          
+        >
+          <span >Prestations</span>
+        </v-btn>
+
+        <v-btn
+          x-small      
+          text
+          href="#activites"
+          @click="$vuetify.goTo('#activites')"
+          
+        >
+          <span >Activités</span>
+        </v-btn>
+
+        <v-btn  
+          x-small    
+          text
+          href="#reservation"
+          @click="$vuetify.goTo('#reservation')"
+          
+        >
+          <span>Réservation</span>
+        </v-btn>
+      </v-app-bar>
+    
+
+    <v-main>
+      <Accueil id="accueil"/>
+      <Gite id="gite"/>
+      <Prestations id="prestations"/>
+      <Activites id="activites"/>      
+      <Reservation id="reservation"/>
+     
+    </v-main>
+  </v-app>
+  <v-app v-else>
       <v-app-bar
         app
         color="brown"
         dark        
+        
       >
         <v-spacer></v-spacer>
 
@@ -79,6 +148,11 @@ export default {
     Activites,
     Reservation,
   
+},
+computed: {
+   isMobile() {
+      return this.$vuetify.breakpoint.xsOnly;
+   }
 },
   data: () => ({
     //
